@@ -8,7 +8,7 @@ const outputContent = document.getElementById('output-content');
 const historyItems = document.getElementById('history-items');
 
 const checkTelephone = (telephone) => {
-    const regex = /^1?\s?\(?(\d{3})\)?[-.\s]?(\d{3})[-.\s]?(\d{4})$/;
+    const regex = /^1?\s*(\(\d{3}\)|\d{3})[-.\s]?(\d{3})[-.\s]?(\d{4})$/;
     return regex.test(telephone);
 }
 
