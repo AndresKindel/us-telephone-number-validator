@@ -36,6 +36,7 @@ h1 {
     flex-direction: column;
     background-color: var(--secondary-color);
     border: 3px solid var(--tertiary-color);
+    border-radius: 20px;
     width: 50vh;
     padding: 20px;
     font-size: 1.25rem;
@@ -68,11 +69,57 @@ button:hover {
     color: black;
 }
 
+/* results */
+
+#output {
+    width: 50vh;
+    margin-top: 20px;
+}
+
+#output-content {
+    font-size: 1.5rem;
+}
+
+/* history */
+
+aside {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+#history-content {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 20%;
+    overflow: auto;
+    height: 93vh;
+    background-color: var(--secondary-color);
+    border: 3px solid var(--tertiary-color);
+}
+
+#history-content h2 {
+    font-size: 2rem;
+}
+
+.history-item {
+    padding: 10px;
+    border-bottom: 2px solid var(--tertiary-color);
+}
+
+.hidden {
+    display: none;
+}
+
 /* footer */
 
 #footer {
     display: flex;
     justify-content: space-evenly;
+    border-top: 3px solid var(--tertiary-color);
     position: fixed;
     bottom: 0;
     width: 100%;
